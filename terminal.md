@@ -26,3 +26,18 @@
 - `git branch -M main`: make a branch called "main"
 - `git push -u origin main`: push to github.com
    - after the first push, you can simple type `git push`
+
+### firebase
+
+- `npm install -g firebase-tools` to install firebase CLI
+  - (or `curl -sL https://firebase.tools | bash`)
+- `firebase login` to login
+- On firebase console, create a new project, and create a Firestore
+- `firebase init` to initialize a firebase project
+  - select "Firestore" and "Hosting"
+  - "Use an existing project" (select the project from the list)
+  - "What do you want to use as your public directory?" `build`
+  - "Configure as a single-page app?" `y`
+  - "File "build/index.html" already exist. Overwrite?" `n`
+- make you sure you app is built! (`npm run build`)
+- `firebase deploy` !!!!!!!!
